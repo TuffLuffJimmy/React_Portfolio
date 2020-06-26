@@ -1,24 +1,24 @@
 import React from 'react'
+import { Button, Card } from 'react-bootstrap'
 
 const MyCard = (props) => {
 	console.log(props)
 	return (
 		<div>
-			<h1>{props.title}</h1>
+			{/* <h1>{props.title}</h1>
 			<h3>{props.link}</h3>
-			<p>{props.description}</p>
+			<p>{props.description}</p> */}
 
-			{/* <Card style={{ width: '18rem' }}>
-			<Card.Img variant="top" src="holder.js/100px180" />
+			<Card style={{ width: '18rem' }}>
+			<Card.Img variant="top" src={props.image} />
 			<Card.Body>
-				<Card.Title>Card Title</Card.Title>
+		<Card.Title>{props.Title}</Card.Title>
 				<Card.Text>
-					Some quick example text to build on the card title and make up the
-					bulk of the card's content.
+					{props.description}
 				</Card.Text>
 				<Button variant="primary">Go somewhere</Button>
 			</Card.Body>
-		</Card> */}
+		</Card>
 		</div>
 	)
 }
