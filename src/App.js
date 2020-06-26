@@ -6,21 +6,24 @@ import NavBar from './components/NavBar'
 
 function App() {
 	return (
-		<Router>
-			<div>
-				<nav>
-          <NavBar />
-        </nav>
-				<Switch>
-					<Route exact path="/">
-						<Home />
-					</Route>
-					<Route path="/portfolio">
-						<Portfolio />
-					</Route>
-				</Switch>
-			</div>
-		</Router>
+		// <Router>
+		// 	<div>
+		// 		<nav>
+    //       <NavBar />
+    //     </nav>
+		// 		<Switch>
+		// 			<Route exact path="/">
+		// 				<Home />
+		// 			</Route>
+		// 			<Route path="/portfolio">
+		// 				<Portfolio />
+		// 			</Route>
+		// 		</Switch>
+		// 	</div>
+    // </Router>
+    <div>
+      <Portfolio />
+    </div>
 	)
 }
 

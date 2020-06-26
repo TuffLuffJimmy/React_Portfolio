@@ -9,16 +9,20 @@ const MyCard = (props) => {
 			<h3>{props.link}</h3>
 			<p>{props.description}</p> */}
 
-			<Card style={{ width: '18rem' }}>
-			<Card.Img variant="top" src={props.image} />
-			<Card.Body>
-		<Card.Title>{props.Title}</Card.Title>
-				<Card.Text>
-					{props.description}
-				</Card.Text>
-				<Button variant="primary">Go somewhere</Button>
-			</Card.Body>
-		</Card>
+			<Card>
+				<Card.Img
+					variant="top"
+					src={props.image}
+					style={{ width: '400px', height: '400px' }}
+				/>
+				<Card.Body>
+					<Card.Title>{props.Title}</Card.Title>
+					<Card.Text>{props.description}</Card.Text>
+					<a href={props.link}>
+						<Button variant="primary">Go to Project</Button>
+					</a>
+				</Card.Body>
+			</Card>
 		</div>
 	)
 }
